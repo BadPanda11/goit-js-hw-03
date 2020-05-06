@@ -10,9 +10,6 @@ const findBestEmployee = function (employees) {
   return bestEmployee;
 };
 
-/*
- * Вызовы функции для проверки работоспособности твоей реализации.
- */
 console.log(
   findBestEmployee({
     ann: 29,
