@@ -11,10 +11,9 @@ const products = [
 const getAllPropValues = function (arr, prop) {
   const valueMassive = [];
   for (const product of arr) {
-    if (product[prop] === undefined) {
-      continue;
+    if (product[prop] !== undefined) {
+      valueMassive.push(product[prop]);
     }
-    valueMassive.push(product[prop]);
   }
   return valueMassive;
 };

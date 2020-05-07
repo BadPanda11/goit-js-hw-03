@@ -4,6 +4,7 @@ const findBestEmployee = function (employees) {
   let bestEmployee;
   for (const employee in employees) {
     if (employees[employee] > searchBestEmployee) {
+      searchBestEmployee = employees[employee];
       bestEmployee = employee;
     }
   }
@@ -14,7 +15,7 @@ console.log(
   findBestEmployee({
     ann: 29,
     david: 35,
-    helen: 1,
     lorence: 99,
+    helen: 1,
   }),
 ); // lorence
